@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+
+}
+header{
+    height: 100px;
+    background-color: #474740;
+    padding: 0 50px;
+    color: #474740;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/*header*/
+header{
+    height: 100px;
+    background-color: #1e1d1d;
+    padding: 0 50px;
+    color: rgb(226, 43, 156);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    color: #000000;
+    background-color: aliceblue;
+
+}
+
+.menu a{ 
+    color: chocolate;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding:0 10px ;
+    transform: 0,45s;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0,4s;
+
+}
+.mostrar-menu{
+    order: 1;
+}
+.menu a :hover,
+.mostrar-menu hover
+.esconder-menu hover{
+    color: #6cc091;
+}
+#check{
+    display: none;
+}
+/*BANNER*/
+#banner{
+    padding: 0 50PX;
+    background-image: url(./banner.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner:before{
+    content: '';
+    /*background:rgba(77, 77, 92, 0.6);*/
+position: absolute;
+width: 100%;
+height: 45vh;
+left: 0;
+}
+.contenido-banner{
+    position: relative;
+    color: rgb(5, 105, 4);
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+
+}
+.contenido-banner h3 span{
+    font-weight: 600;
+
+}
+.boton-empezar{
+   background-color: #2e533e;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   border-radius: 4px;
+   transition: transform 0.2s ;
+}
+.boton-empezar:hover{
+    transform: scale(1.1);
+    background: #254231;
+}
+
+#objetos{
+    margin: 0px;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#objetos div{
+    color: #254231;
+    font-size: 20px;
+    margin: 40px 0px;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.favoritos input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .favoritos {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .favoritos svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: all 0.3s;
+    fill: #666;
+  }
+  
+  .favoritos svg:hover {
+    transform: scale(1.1);
+  }
+  
+  .favoritos input:checked ~ svg {
+    fill: #ffeb49;
+  }
+  
+.comprar {
+    background-color: #2e533e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 35px 2px;
+    border-radius: 30px;
+    transition: transform 0.8s, background-color 0.5s; 
+}
+
+.comprar:hover {
+    transform: scale(1.1);
+    background: #254231;
+}
+/*responsive*/
+@media(max-width:768px){
+    /*header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        width: 100px;
+        height: 100vh;
+        background: #4d4d5c;
+        left: 0;
+        right: 100%;
+        top: 0;
+        text-align: center;
+        z-index: 100;
+        transition: 0,8s;
+
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 4px;
+    }
+#check:checked-.menu{
+    right: 0;
+    }
+}
+.guantes1 {
+    width: 90%; /* O establece un ancho específico */
+    transition: transform 0.5s; /* Para la transición */
+}
+.guantes1:hover {
+    transform: scale(1.1); /* Escalar la imagen al pasar el ratón */
+}
+
+.guantes1 {
+    margin: 15px;
+    margin-bottom: 10%;
+    margin-left: 20px;
+    box-shadow: 3px 3px 20px #254231;
+}
+.guantes2 {
+    margin: 20px;
+    margin-bottom: ;
+    margin-right: 10px;
+    box-shadow: 3px 3px 20px #254231 ;
+}
+.guantes2 {
+    width: 90%; /* O establece un ancho específico */
+    transition: transform 0.5s; /* Para la transición */
+}
+.guantes2:hover {
+    transform: scale(1.1); /* Escalar la imagen al pasar el ratón */
+}
+.zeus {
+
+}
